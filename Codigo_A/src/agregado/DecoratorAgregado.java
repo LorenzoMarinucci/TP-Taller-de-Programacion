@@ -50,56 +50,48 @@ public abstract class DecoratorAgregado implements I_Contratable {
      * @return : Su implementación debe retornar el precio del servicio
      * 
      */
-    @Override
   	public abstract double getPrecio();
    
     /**
      *
      * @return : Su implementación debe retornar la ID del servicio
      */
-    @Override
 	public abstract int getID();
        
     /**
      *
      * @return : Su implementación debe retornar el Domicilio
      */
-    @Override
 	public abstract Domicilio getDomicilio();
      
     /**
      *
      * @return : Su implementación debe retornar si es un servicio de Interner100
      */
-    @Override
 	public abstract boolean isInternet100();
 
     /**
      *
      * @return : Su implentación debe retornar si es un servicio de Internet500
      */
-    @Override
 	public abstract boolean isInternet500();
         
     /**
      *
      * @return : Su implentación debe retornar si es un servicio de Celular
      */
-    @Override
 	public abstract boolean isCelular();
 
     /**
      *
      * @return : Su implementación debe retornar si es un servicio de teléfono
      */
-    @Override
 	public abstract boolean isTelefono();
 
     /**
      *
      * @return : Su implementación debe retornar si es un servicio de TV_Cable
      */
-        @Override
 	public abstract boolean isTV_Cable();
 	
 	/**
