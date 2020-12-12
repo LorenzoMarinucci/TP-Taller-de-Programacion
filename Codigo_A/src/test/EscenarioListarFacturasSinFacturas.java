@@ -8,10 +8,10 @@ public class EscenarioListarFacturasSinFacturas {
 	
 	public EscenarioListarFacturasSinFacturas() {
 		
-		this.sistema = sistema.getInstancia();
+		this.sistema = Sistema.getInstancia();
 	}
 	
 	public Sistema getSistema() {
-		return sistema.getInstancia();
+		return Sistema.getInstancia();
 	}
 }
