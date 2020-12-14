@@ -4,6 +4,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
 import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -37,8 +38,16 @@ public class duplicarFacturaTest {
 	}
 	
 	@Test
-	public void TestPersonaNula() {
-		
+	public void TestClonarFisica() {
+		sistema.duplicarFactura(fisica.getNombre());
+		String salida = outContent.toString();
+		Assert.assertTrue(salida.contains("FACTURA DUPLICADA"));
+	}
+
+	@Test
+	public void TestClonarJuridica() {
+		sistema.duplicarFactura(juridica.getNombre());
+		Assert.assertEquals("Error al clonar, la persona es juridica" + System.getProperty("line.separator"), outContent.toString());
 	}
 
 }

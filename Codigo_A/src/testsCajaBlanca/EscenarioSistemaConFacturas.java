@@ -30,6 +30,6 @@ public class EscenarioSistemaConFacturas {
 	}
 	
 	public Persona getJuridica() {
-		return persona;
+		return juridica;
 	}
 }
