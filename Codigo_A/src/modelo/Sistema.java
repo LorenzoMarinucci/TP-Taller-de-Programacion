@@ -34,7 +34,12 @@ public class Sistema {
 			instancia= new Sistema();
 		return instancia;
 	}
-
+	
+	//METODO PARA PODER TESTEAR LA CLASE (BORRAR AL TERMINAR EL TESTEO)
+	public void setInstancia() {
+		this.instancia = null;
+	}
+	
 	/**
 	 * Agrega una Factura al sistema y a la vez analiza si no hay una persona repetida<br>
 	 * <b>Pre: </b> El parametro Persona debe ser distinto de null<br>
@@ -178,3 +183,4 @@ public class Sistema {
 
 	
 }
+
