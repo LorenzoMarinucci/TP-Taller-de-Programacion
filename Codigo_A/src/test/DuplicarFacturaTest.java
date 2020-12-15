@@ -1,6 +1,7 @@
 package test;
 
-import static org.junit.Assert.*;
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
 
 import org.junit.After;
 import org.junit.Before;
@@ -10,17 +11,29 @@ public class DuplicarFacturaTest {
 	
 	EscenarioListarFacturasSinFacturas escenarioVacio;
 	EscenarioDuplicarFactura escenarioNoVacio;
+	private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
+	private final ByteArrayOutputStream errContent = new ByteArrayOutputStream();
+	private final PrintStream originalOut = System.out;
+	private final PrintStream originalErr = System.err;
 
 	@Before
 	public void setUp() throws Exception {
 		
 		escenarioVacio = new EscenarioListarFacturasSinFacturas();
 		escenarioNoVacio = new EscenarioDuplicarFactura();
+		System.setOut(new PrintStream(outContent));
+	    System.setErr(new PrintStream(errContent));
 	}
 
 	@After
 	public void tearDown() throws Exception {
+		this.escenarioNoVacio.getSistema().setInstancia();
+		this.escenarioVacio.getSistema().setInstancia();
+		System.setOut(originalOut);
+	    System.setErr(originalErr);
 	}
+	
+	//Assert.assertEquals("Persona ya existente" + System.getProperty("line.separator"), outContent.toString());
 
 	//Observaciones: el metodo deberia obligarnos a poner un try-catch y no lo hace
 	
