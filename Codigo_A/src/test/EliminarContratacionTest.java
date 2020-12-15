@@ -2,6 +2,9 @@ package test;
 
 import static org.junit.Assert.*;
 
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
+
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
@@ -11,19 +14,29 @@ public class EliminarContratacionTest {
 
 	EscenarioListarFacturasSinFacturas escenarioVacio;
 	EscenarioEliminarContratacion escenarioNoVacio;
+	private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
+	private final ByteArrayOutputStream errContent = new ByteArrayOutputStream();
+	private final PrintStream originalOut = System.out;
+	private final PrintStream originalErr = System.err;
 
 	@Before
 	public void setUp() throws Exception {
 		escenarioVacio = new EscenarioListarFacturasSinFacturas();
 		escenarioNoVacio = new EscenarioEliminarContratacion();
+		System.setOut(new PrintStream(outContent));
+	    System.setErr(new PrintStream(errContent));
 	}
 
 	@After
 	public void tearDown() throws Exception {
 		this.escenarioNoVacio.getSistema().setInstancia();
 		this.escenarioVacio.getSistema().setInstancia();
+		System.setOut(originalOut);
+	    System.setErr(originalErr);
 	}
 
+	//Assert.assertEquals("Persona ya existente" + System.getProperty("line.separator"), outContent.toString());
+	
 	// -------------------------------- CLASES CORRECTAS ---------------------------------
 
 	@Test
@@ -50,10 +63,8 @@ public class EliminarContratacionTest {
 
 	// ------------------------------- CLASES INCORRECTAS -------------------------------
 
-	// los metodos estan en el orden de la bateria de pruebas (de arriba hacia
-	// abajo)
-	// primero los 3 casos con el escenario vacio y luego los 3 casos de escenario
-	// no vacio
+	// los metodos estan en el orden de la bateria de pruebas (de arriba hacia	// abajo)
+	// primero los 3 casos con el escenario vacio y luego los 3 casos de escenario no vacio
 
 	@Test
 	public void testEliminarContratacionPersonaVaciaEscenarioVacio() {
