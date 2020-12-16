@@ -14,20 +14,16 @@ import org.junit.Test;
 import interfaces.I_Contratable;
 
 public class EliminarContratacionTest {
-
-	EscenarioListarFacturasSinFacturas escenarioVacio;
 	EscenarioEliminarContratacion escenarioNoVacio;
 
 	@Before
 	public void setUp() throws Exception {
-		escenarioVacio = new EscenarioListarFacturasSinFacturas();
 		escenarioNoVacio = new EscenarioEliminarContratacion();
 	}
 
 	@After
 	public void tearDown() throws Exception {
 		this.escenarioNoVacio.getSistema().setInstancia();
-		this.escenarioVacio.getSistema().setInstancia();
 	}
 	
 	// -------------------------------- CLASES CORRECTAS ---------------------------------
@@ -54,21 +50,6 @@ public class EliminarContratacionTest {
 	}
 
 	// ------------------------------- CLASES INCORRECTAS -------------------------------
-
-	@Test
-	public void testEliminarContratacionPersonaVaciaEscenarioVacio() {
-		this.escenarioVacio.getSistema().eliminarContratacion("", "Juan B Justo 4000");
-	}
-
-	@Test
-	public void testEliminarContratacionDomicilioVacioEscenarioVacio() {
-		this.escenarioVacio.getSistema().eliminarContratacion("Juan Perez", "");
-	}
-
-	@Test
-	public void testEliminarContratacionPersonaNoExisteEscenarioVacio() {
-		this.escenarioVacio.getSistema().eliminarContratacion("María Suárez", "Salta 1234");
-	}
 
 	@Test
 	public void testEliminarContratacionPersonaVaciaEscenarioNoVacio() {
