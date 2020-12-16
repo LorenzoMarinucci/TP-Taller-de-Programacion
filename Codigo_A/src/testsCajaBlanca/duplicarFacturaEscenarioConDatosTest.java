@@ -1,6 +1,7 @@
 package testsCajaBlanca;
 
 import java.io.ByteArrayOutputStream;
+import java.io.IOException;
 import java.io.PrintStream;
 
 import org.junit.After;
@@ -11,7 +12,7 @@ import org.junit.Test;
 import modelo.Sistema;
 import personas.Persona;
 
-public class duplicarFacturaTest {
+public class duplicarFacturaEscenarioConDatosTest {
 	
 	private Sistema sistema;
 	private Persona fisica;
@@ -48,6 +49,26 @@ public class duplicarFacturaTest {
 	public void TestClonarJuridica() {
 		sistema.duplicarFactura(juridica.getNombre());
 		Assert.assertEquals("Error al clonar, la persona es juridica" + System.getProperty("line.separator"), outContent.toString());
+	}
+
+	@Test
+	public void TestClonarPersonaNull() {
+		try {
+			sistema.duplicarFactura(null);
+		}
+		catch (Exception e) {
+			Assert.fail();
+		}
+	}
+
+	@Test
+	public void TestClonarPersonaNoExistente() {
+		try {
+			sistema.duplicarFactura("Pedro");
+		}
+		catch (Exception e) {
+			Assert.fail();
+		}
 	}
 
 }
