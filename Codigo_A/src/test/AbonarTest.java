@@ -12,6 +12,7 @@ import mediospagos.PagoTarjeta;
 
 public class AbonarTest {
 	EscenarioAbonar escenario;
+	
 	@Before
 	public void setUp() throws Exception {
 		this.escenario = new EscenarioAbonar();
