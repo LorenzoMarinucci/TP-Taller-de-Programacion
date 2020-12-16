@@ -14,29 +14,26 @@ public class ListarFacturasTest {
 	@Before
 	public void setUp() throws Exception {
 		this.escenarioVacio = new EscenarioListarFacturasSinFacturas();
+		this.escenarioNoVacio = new EscenarioListarFacturasConFacturas();
 	}
 
 	@After
 	public void tearDown() throws Exception {
-	}
-
-	@Test
-	public void testCadenaVacia() {
-		
-		String cadena = this.escenarioVacio.getSistema().listarFacturas();
-		
-		Assert.assertTrue("La cadena debería ser vacia", cadena.equals(""));
-		
-		
+		this.escenarioNoVacio.getSistema().setInstancia();
+		this.escenarioVacio.getSistema().setInstancia();
 	}
 	
-	public void testCadenaNoVacia() {
-		
-		String cadena = this.escenarioNoVacio.getSistema().listarFacturas();
-		
-		Assert.assertFalse("La cadena no debería ser vacia", cadena.equals(""));
-		
-		
+	//NO ACLARA COMO DEBE SER LA CADENA EN EL JAVADOC, POR LO QUE SOLO PODEMOS TESTEAR POR !=NULL
+	
+	@Test
+	public void testEscenarioSinFacturas() {
+		String cadena = this.escenarioVacio.getSistema().listarFacturas();
+		Assert.assertTrue("La cadena no debería ser null", cadena != null);
 	}
-
+	
+	@Test
+	public void testEscenarioConFacturas() {
+		String cadena = this.escenarioNoVacio.getSistema().listarFacturas();
+		Assert.assertTrue("La cadena no debería ser null", cadena != null);
+	}
 }

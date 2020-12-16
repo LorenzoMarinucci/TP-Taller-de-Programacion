@@ -13,13 +13,12 @@ public class ModificarAgregadoTest {
 	
 	@Before
 	public void setUp() throws Exception {
-		
 		this.escenarioNoVacio = new EscenarioModificarAgregadoConFacturas();
-		
 	}
 
 	@After
 	public void tearDown() throws Exception {
+		this.escenarioNoVacio.getSistema().setInstancia();
 	}
 
 	@Test

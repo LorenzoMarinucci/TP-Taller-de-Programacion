@@ -7,7 +7,6 @@ public class EscenarioListarFacturasSinFacturas {
 	Sistema sistema;
 	
 	public EscenarioListarFacturasSinFacturas() {
-		
 		this.sistema = Sistema.getInstancia();
 	}
 	
