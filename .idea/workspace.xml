@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="557f527d-56ab-4abf-aafe-b70c3db02b6c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Codigo_A/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/Codigo_A/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codigo_A/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Codigo_A/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codigo_A/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/Codigo_A/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codigo_A/classes/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/Codigo_A/classes/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codigo_A/classes/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codigo_A/classes/agregado/Celular.class" beforeDir="false" afterPath="$PROJECT_DIR$/Codigo_A/classes/agregado/Celular.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codigo_A/classes/agregado/ContratableFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/Codigo_A/classes/agregado/ContratableFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codigo_A/classes/agregado/DecoratorAgregado.class" beforeDir="false" afterPath="$PROJECT_DIR$/Codigo_A/classes/agregado/DecoratorAgregado.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codigo_A/classes/agregado/TV_Cable.class" beforeDir="false" afterPath="$PROJECT_DIR$/Codigo_A/classes/agregado/TV_Cable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codigo_A/classes/agregado/Telefono.class" beforeDir="false" afterPath="$PROJECT_DIR$/Codigo_A/classes/agregado/Telefono.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codigo_A/classes/excepciones/DomicilioInvalidoException.class" beforeDir="false" afterPath="$PROJECT_DIR$/Codigo_A/classes/excepciones/DomicilioInvalidoException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codigo_A/classes/excepciones/PersonaExistenteException.class" beforeDir="false" afterPath="$PROJECT_DIR$/Codigo_A/classes/excepciones/PersonaExistenteException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codigo_A/classes/excepciones/ServicioInternetInvalidoException.class" beforeDir="false" afterPath="$PROJECT_DIR$/Codigo_A/classes/excepciones/ServicioInternetInvalidoException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codigo_A/classes/interfaces/I_Contratable.class" beforeDir="false" afterPath="$PROJECT_DIR$/Codigo_A/classes/interfaces/I_Contratable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codigo_A/classes/interfaces/I_Pago.class" beforeDir="false" afterPath="$PROJECT_DIR$/Codigo_A/classes/interfaces/I_Pago.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codigo_A/classes/mediospagos/PagoCheque.class" beforeDir="false" afterPath="$PROJECT_DIR$/Codigo_A/classes/mediospagos/PagoCheque.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codigo_A/classes/mediospagos/PagoEfectivo.class" beforeDir="false" afterPath="$PROJECT_DIR$/Codigo_A/classes/mediospagos/PagoEfectivo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codigo_A/classes/mediospagos/PagoTarjeta.class" beforeDir="false" afterPath="$PROJECT_DIR$/Codigo_A/classes/mediospagos/PagoTarjeta.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codigo_A/classes/modelo/Sistema.class" beforeDir="false" afterPath="$PROJECT_DIR$/Codigo_A/classes/modelo/Sistema.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codigo_A/classes/personas/Fisica.class" beforeDir="false" afterPath="$PROJECT_DIR$/Codigo_A/classes/personas/Fisica.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codigo_A/classes/personas/Juridica.class" beforeDir="false" afterPath="$PROJECT_DIR$/Codigo_A/classes/personas/Juridica.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codigo_A/classes/personas/Persona.class" beforeDir="false" afterPath="$PROJECT_DIR$/Codigo_A/classes/personas/Persona.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codigo_A/classes/servicios/Domicilio.class" beforeDir="false" afterPath="$PROJECT_DIR$/Codigo_A/classes/servicios/Domicilio.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codigo_A/classes/servicios/DomicilioCasa.class" beforeDir="false" afterPath="$PROJECT_DIR$/Codigo_A/classes/servicios/DomicilioCasa.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codigo_A/classes/servicios/DomicilioDepto.class" beforeDir="false" afterPath="$PROJECT_DIR$/Codigo_A/classes/servicios/DomicilioDepto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codigo_A/classes/servicios/Factura.class" beforeDir="false" afterPath="$PROJECT_DIR$/Codigo_A/classes/servicios/Factura.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codigo_A/classes/servicios/Internet100.class" beforeDir="false" afterPath="$PROJECT_DIR$/Codigo_A/classes/servicios/Internet100.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codigo_A/classes/servicios/Internet500.class" beforeDir="false" afterPath="$PROJECT_DIR$/Codigo_A/classes/servicios/Internet500.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codigo_A/classes/servicios/Servicio.class" beforeDir="false" afterPath="$PROJECT_DIR$/Codigo_A/classes/servicios/Servicio.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codigo_A/classes/test/DuplicarFacturaTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/Codigo_A/classes/test/DuplicarFacturaTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codigo_A/classes/test/EliminarContratacionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/Codigo_A/classes/test/EliminarContratacionTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codigo_A/classes/test/EscenarioDuplicarFactura.class" beforeDir="false" afterPath="$PROJECT_DIR$/Codigo_A/classes/test/EscenarioDuplicarFactura.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codigo_A/classes/test/EscenarioEliminarContratacion.class" beforeDir="false" afterPath="$PROJECT_DIR$/Codigo_A/classes/test/EscenarioEliminarContratacion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codigo_A/classes/test/EscenarioListarFacturasConFacturas.class" beforeDir="false" afterPath="$PROJECT_DIR$/Codigo_A/classes/test/EscenarioListarFacturasConFacturas.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codigo_A/classes/test/EscenarioListarFacturasSinFacturas.class" beforeDir="false" afterPath="$PROJECT_DIR$/Codigo_A/classes/test/EscenarioListarFacturasSinFacturas.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codigo_A/classes/test/EscenarioModificarAgregadoConFacturas.class" beforeDir="false" afterPath="$PROJECT_DIR$/Codigo_A/classes/test/EscenarioModificarAgregadoConFacturas.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codigo_A/classes/test/ListarFacturasTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/Codigo_A/classes/test/ListarFacturasTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codigo_A/classes/test/ModificarAgregadoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/Codigo_A/classes/test/ModificarAgregadoTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codigo_A/classes/testsCajaBlanca/EscenarioListarFactura.class" beforeDir="false" afterPath="$PROJECT_DIR$/Codigo_A/classes/testsCajaBlanca/EscenarioListarFactura.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codigo_A/classes/testsCajaBlanca/EscenarioSistemaConFacturas.class" beforeDir="false" afterPath="$PROJECT_DIR$/Codigo_A/classes/testsCajaBlanca/EscenarioSistemaConFacturas.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codigo_A/classes/testsCajaBlanca/EscenarioSistemaVacio.class" beforeDir="false" afterPath="$PROJECT_DIR$/Codigo_A/classes/testsCajaBlanca/EscenarioSistemaVacio.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codigo_A/classes/testsCajaBlanca/agregarFacturasConDatosTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/Codigo_A/classes/testsCajaBlanca/agregarFacturasConDatosTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codigo_A/classes/testsCajaBlanca/agregarFacturasVacioTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/Codigo_A/classes/testsCajaBlanca/agregarFacturasVacioTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codigo_A/classes/testsCajaBlanca/agregarServicioTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/Codigo_A/classes/testsCajaBlanca/agregarServicioTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codigo_A/classes/testsCajaBlanca/duplicarFacturaTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/Codigo_A/classes/testsCajaBlanca/duplicarFacturaTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codigo_A/classes/testsCajaBlanca/getInstanciaTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/Codigo_A/classes/testsCajaBlanca/getInstanciaTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Codigo_A/classes/testsCajaBlanca/listarFacturaTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/Codigo_A/classes/testsCajaBlanca/listarFacturaTest.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1lfu7IbJp2z7DNDt01VUYuoE02A" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../Program Files/Java/jre1.8.0_111" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <module name="TP-Taller-de-Programacion" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <module name="TP-Taller-de-Programacion" />
+      <option name="ALTERNATIVE_JRE_PATH" value="C:\Program Files\Java\jdk1.8.0_241\jre" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="557f527d-56ab-4abf-aafe-b70c3db02b6c" name="Default Changelist" comment="" />
+      <created>1608000298732</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1608000298732</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

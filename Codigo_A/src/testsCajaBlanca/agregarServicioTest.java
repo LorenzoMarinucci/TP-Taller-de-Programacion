@@ -41,26 +41,25 @@ public class agregarServicioTest {
 	
 	@Test
 	public void testAgregarServicio(){
+		int serviciosPrevios = sistema.getListaFacturas().get(persona).getListaContrataciones().size();
 		sistema.agregarServicio(persona, "INTERNET100", 4, 2, 10, domicilio);
-		Assert.assertEquals("", outContent.toString());
+		Assert.assertEquals(serviciosPrevios+1,sistema.getListaFacturas().get(persona).getListaContrataciones().size());
 	}
 	
 	@Test
 	public void testServicioInvalido() {
+		int serviciosPrevios = sistema.getListaFacturas().get(persona).getListaContrataciones().size();
 		sistema.agregarServicio(persona, "", 4, 2, 10, domicilio);
 		Assert.assertEquals("No se ingreso un servicio de internet" + System.getProperty("line.separator"), outContent.toString());
+		Assert.assertEquals(serviciosPrevios,sistema.getListaFacturas().get(persona).getListaContrataciones().size());
 	}
 	
 	@Test
 	public void testDomicilioInvalido() {
+		int serviciosPrevios = sistema.getListaFacturas().get(persona).getListaContrataciones().size();
 		sistema.agregarServicio(persona, "INTERNET100", 4, 2, 10, null);
 		Assert.assertEquals("No se ingreso un domicilio" + System.getProperty("line.separator"), outContent.toString());
+		Assert.assertEquals(serviciosPrevios,sistema.getListaFacturas().get(persona).getListaContrataciones().size());
 	}
-	
-	@Test
-	public void testInternetInvalido() {
-		sistema.agregarServicio(persona, "INTERNET1000", 4, 2, 10, domicilio);
-		Assert.assertEquals("El servicio de internet ingresado no existe" + System.getProperty("line.separator"), outContent.toString());
-	}
-	
+
 }

@@ -7,7 +7,7 @@ public class EscenarioSistemaVacio {
 	private Sistema sistema;
 
 	public EscenarioSistemaVacio() {
-
+		Sistema.getInstancia().setInstancia();
 		this.sistema = Sistema.getInstancia();
 	}
 

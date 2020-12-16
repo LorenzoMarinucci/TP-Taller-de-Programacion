@@ -12,7 +12,8 @@ public class EscenarioSistemaConFacturas {
 	private Persona juridica = new Juridica("Marcos", 13432123);
 	
 	public EscenarioSistemaConFacturas() {
-		
+
+		Sistema.getInstancia().setInstancia();
 		this.sistema = Sistema.getInstancia();
 		
 		this.sistema.agregarFacturas(persona);

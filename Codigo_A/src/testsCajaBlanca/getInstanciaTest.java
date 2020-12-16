@@ -17,6 +17,7 @@ public class getInstanciaTest {
 	
 	@Test
 	public void instanciaCreada() {
+		Sistema.getInstancia().setInstancia();
 		Sistema primeraInstancia = Sistema.getInstancia();
 		Sistema segundaInstancia = Sistema.getInstancia();
 		Assert.assertSame(primeraInstancia, segundaInstancia);

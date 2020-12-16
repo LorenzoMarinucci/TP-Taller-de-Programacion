@@ -41,6 +41,7 @@ public class agregarFacturasConDatosTest {
 		Persona nuevaPersona = new Fisica("Juancito", 41777555);
 		sistema.agregarFacturas(nuevaPersona);
 		Assert.assertEquals("", outContent.toString());
+		Assert.assertTrue(sistema.getListaFacturas().containsKey(nuevaPersona.getNombre()));
 	}
 	
 	@Test

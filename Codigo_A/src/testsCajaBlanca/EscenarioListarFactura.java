@@ -17,6 +17,7 @@ public class EscenarioListarFactura {
 
     public EscenarioListarFactura() {
 
+        Sistema.getInstancia().setInstancia();
         this.sistema = Sistema.getInstancia();
         this.sistema.agregarFacturas(personaConDesc);
         this.sistema.agregarFacturas(personaSinDesc);
@@ -25,7 +26,7 @@ public class EscenarioListarFactura {
         Domicilio domicilioSD = new DomicilioCasa("Guemes", 1212);
 
         sistema.agregarServicio(personaConDesc.getNombre(), "INTERNET100", 2, 2, 2, domicilioCD);
-        sistema.agregarServicio(personaConDesc.getNombre(), "INTERNET100", 2, 2, 2, domicilioSD);
+        sistema.agregarServicio(personaSinDesc.getNombre(), "INTERNET100", 2, 2, 2, domicilioSD);
 
         sistema.abonar(personaConDesc.getNombre(), new PagoEfectivo());
         sistema.abonar(personaSinDesc.getNombre(), new PagoCheque());

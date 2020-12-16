@@ -41,7 +41,7 @@ public class duplicarFacturaTest {
 	public void TestClonarFisica() {
 		sistema.duplicarFactura(fisica.getNombre());
 		String salida = outContent.toString();
-		Assert.assertTrue(salida.contains("FACTURA DUPLICADA"));
+		Assert.assertTrue(salida.contains("FACTURA DUPLICADA:") && !salida.contains("Error al clonar, la persona es juridica"));
 	}
 
 	@Test
