@@ -35,25 +35,5 @@ public class listarFacturaTest {
         String salida = sistema.listarFactura(personaConDesc.getNombre());
         Assert.assertTrue(salida.contains("PRECIO TOTAL SIN DESCUENTO:") && salida.contains("PRECIO TOTAL CON DESCUENTO:") && !salida.contains("PRECIO TOTAL:"));
     }
-    
-    @Test
-    public void TestPersonaNoExistente() {
-    	try {
-    		sistema.listarFactura("Felipe");
-    	}
-    	catch(Exception e) {
-    		Assert.fail();
-    	}
-    }
-    
-    @Test
-    public void TestPersonaNull() {
-    	try {
-    		sistema.listarFactura(null);
-    	}
-    	catch(Exception e) {
-    		Assert.fail();
-    	}
-    }
 
 }
