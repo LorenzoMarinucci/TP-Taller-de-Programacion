@@ -17,7 +17,7 @@ public class listarFacturasSinDescuentoTest {
     }
 
     @Test
-    public void TestSinDescuento() {
+    public void TestSinDescuento(){
         String salida = sistema.listarFacturas();
         Assert.assertTrue(!salida.contains("PRECIO TOTAL SIN DESCUENTO:") && !salida.contains("PRECIO TOTAL CON DESCUENTO:") && salida.contains("PRECIO TOTAL:"));
     }
