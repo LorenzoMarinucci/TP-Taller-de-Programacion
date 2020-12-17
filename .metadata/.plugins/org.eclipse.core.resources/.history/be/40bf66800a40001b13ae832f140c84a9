@@ -44,12 +44,12 @@ public class eliminarContratacionConDatosTest {
 
     @Test
     public void testEliminaContratacionYFactura(){
-        sistema.eliminarContratacion(persona1.getNombre(),"Juan B Justo 4586");
+        sistema.eliminarContratacion(persona2.getNombre(),"Laprida 3187");
         Iterator<I_Contratable> it = sistema.getListaFacturas().get(persona2.getNombre()).getListaContrataciones().iterator();
         while(it.hasNext()) {
             I_Contratable c = it.next();
-            if(c.getDomicilio().getDireccion().equals("Juan B Justo 4586")) {
-                Assert.fail("No deberia contener el domicio Juan B Justo 4586");
+            if(c.getDomicilio().getDireccion().equals("Laprida 3187")) {
+                Assert.fail("No deberia contener el domicio Laprida 3187");
             }
         }
     }
