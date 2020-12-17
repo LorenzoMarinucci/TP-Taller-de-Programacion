@@ -9,6 +9,8 @@ import personas.Fisica;
 import personas.Persona;
 import servicios.Factura;
 
+import java.util.Iterator;
+
 public class eliminarContratacionConDatosTest {
 
     private Sistema sistema;
@@ -30,21 +32,26 @@ public class eliminarContratacionConDatosTest {
 
     @Test
     public void testEliminaContratacion(){
-        Factura factura = sistema.getListaFacturas().get(persona2.getNombre());
-        int contrataciones = factura.getListaContrataciones().size();
-        int p = factura.buscaContratacion("Matheu 5487");
-        I_Contratable contratacion = factura.getListaContrataciones().get(p);
-        sistema.eliminarContratacion(persona2.getNombre(),"Matheu 5487");
-        Assert.assertEquals(contrataciones-1,factura.getListaContrataciones().size());
-        Assert.assertTrue(!factura.getListaContrataciones().contains(contratacion));
+        sistema.eliminarContratacion(persona2.getNombre(),"Laprida 3187");
+        Iterator<I_Contratable> it = sistema.getListaFacturas().get(persona2.getNombre()).getListaContrataciones().iterator();
+        while(it.hasNext()) {
+            I_Contratable c = it.next();
+            if(c.getDomicilio().getDireccion().equals("Laprida 3187")) {
+                Assert.fail("No deberia contener el domicio Laprida 3187");
+            }
+        }
     }
 
     @Test
     public void testEliminaContratacionYFactura(){
-        Factura factura = sistema.getListaFacturas().get(persona1.getNombre());
-        sistema.eliminarContratacion(persona1.getNombre(),"Juan B Justo 4586");
-        Assert.assertEquals(0,factura.getListaContrataciones().size());
-        Assert.assertTrue(!sistema.getListaFacturas().containsKey(persona1.getNombre()));
+        sistema.eliminarContratacion(persona2.getNombre(),"Laprida 3187");
+        Iterator<I_Contratable> it = sistema.getListaFacturas().get(persona2.getNombre()).getListaContrataciones().iterator();
+        while(it.hasNext()) {
+            I_Contratable c = it.next();
+            if(c.getDomicilio().getDireccion().equals("Laprida 3187")) {
+                Assert.fail("No deberia contener el domicio Laprida 3187");
+            }
+        }
     }
 
 }
